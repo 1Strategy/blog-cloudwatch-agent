@@ -27,8 +27,8 @@ There are four steps to install and configure the CloudWatch agent: create an
 IAM role your instances will use to export logs to CloudWatch, install the
 agent, create the configuration file, and start the agent.
 
-The hardest part was getting the agent configuration file correct so log events
-showed up in the right Log Group and CloudWatch timestamps matched individual
+The hardest part is getting the agent configuration file correct so log events
+show up in the right Log Group and CloudWatch timestamps match individual
 log event timestamps.
 
 ## Creating the Agent Configuration File
@@ -37,11 +37,11 @@ The CloudWatch agent gets its log and metric collection [configuration from a
 file](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-Configuration-File-Details.html)
 in the CloudWatch agent directory.
 
-I found the [CloudWatch Agent configuration file
+I have found that the [CloudWatch Agent configuration file
 wizard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-cloudwatch-agent-configuration-file-wizard.html)
-did a pretty good job of the initial configuration and I highly recommend you
-run it to generate the initial config file. However if you are using the
-CloudWatch agent primary for log forwarding, you'll need to edit the config file
+does a pretty good job of generating the initial configuration and I highly recommend you
+run it. However, if you are using the
+CloudWatch agent primarily for log forwarding, you'll need to edit the config file
 by hand.
 
 Here's an example CloudWatch agent `logs` section from a Couchbase server. For a
