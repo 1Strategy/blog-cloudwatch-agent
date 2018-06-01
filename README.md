@@ -48,7 +48,7 @@ Here's an example CloudWatch agent `logs` section from a Couchbase server. For a
 real Couchbase server, you'd need to monitor most of the logs in the
 `couchbase/logs/` directory.
 
-```json
+```JSON
 "logs": {
         "logs_collected": {
             "files": {
